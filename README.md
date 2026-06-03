@@ -1,4 +1,8 @@
 # Protein Physicochemical Analysis Toolkit
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Biopython](https://img.shields.io/badge/Biopython-Latest-green)
+![Linux](https://img.shields.io/badge/Linux-Compatible-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7207ab5c-8b55-4ac7-82c7-937f7a78d9a7" />
 
 
