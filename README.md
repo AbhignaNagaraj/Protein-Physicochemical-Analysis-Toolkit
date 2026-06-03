@@ -84,8 +84,12 @@ Physicochemical profiling is widely used in:
 
 # Repository Structure
 
+## Repository Structure
+
 ```bash
 Protein-Physicochemical-Analysis-Toolkit/
+│
+├── app.py
 │
 ├── data/
 │   └── input_proteins.fasta
@@ -96,12 +100,15 @@ Protein-Physicochemical-Analysis-Toolkit/
 ├── scripts/
 │   └── protein_physchem_analysis.py
 │
-├── requirements.txt
+├── docs/
+│   └── dashboard.png
 │
+├── requirements.txt
+├── LICENSE
 └── README.md
 ```
 
----
+
 
 # Input Format
 
@@ -136,66 +143,46 @@ MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTK
 
 ## Clone Repository
 
-```bash
-git clone https://github.com/AbhignaNagaraj/physicochemical_profiling-of-proteins.git
-cd physicochemical_profiling-of-proteins
+
+git clone https://github.com/AbhignaNagaraj/Protein-Physicochemical-Analysis-Dashboard.git
+cd Protein-Physicochemical-Analysis-Dashboard
 ```
 
 ---
 
 # Requirements
 
-* Python 3.9+
+* Python 3
 * Biopython
 * Pandas
+* Streamlit
+* Plotly
+* Linux/Unix
 
 Install dependencies:
 
-```bash
 python3 -m pip install -r requirements.txt
-```
-
----
-
-# requirements.txt
-
-```txt
-biopython
-pandas
-```
 
 ---
 
 # How to Run
 
-Place the FASTA file inside the `data/` directory and execute:
+
+## Run Streamlit Dashboard
 
 ```bash
-python3 scripts/protein_physchem_analysis.py
+streamlit run app.py
 ```
 
 ---
 
 # Example Output
 
-## Terminal Output
+Analysis Results
+Protein ID	Molecular Weight	Isoelectric Point	GRAVY	Instability Index
+NP_000577.2	17627.53	7.67	-0.007	47.71
+mutated	17629.46	6.82	-0.055	47.71
 
-```bash
-Results for NP_000577.2
-
-Molecular Weight (Da): 17627.53
-Isoelectric Point (pI): 7.67
-GRAVY: -0.007
-Instability Index: 47.71
-```
-
----
-
-# Example CSV Output
-
-| Protein ID  | MW (Da)  | pI   | GRAVY  | Instability Index |
-| ----------- | -------- | ---- | ------ | ----------------- |
-| NP_000577.2 | 17627.53 | 7.67 | -0.007 | 47.71             |
 
 ---
 
@@ -228,6 +215,25 @@ pI is important for:
 * Values < 40 indicate stable proteins
 * Values > 40 suggest intrinsic instability
 
+## Interactive Streamlit Dashboard
+
+This project also includes a Streamlit-based interactive dashboard for automated physicochemical analysis of protein sequences.
+
+### Features
+
+* FASTA file upload
+* Automated protein property analysis
+* Interactive results table
+* CSV export support
+* Comparative protein analysis
+
+### Run Streamlit App
+
+
+streamlit run app.py
+
+
+
 Useful for:
 
 * recombinant protein design
@@ -254,9 +260,12 @@ This toolkit can be used for:
 # Technologies Used
 
 * Python 3
+* Streamlit
 * Biopython
 * Pandas
+* Plotly
 * Linux/Unix
+
 
 ---
 
@@ -266,7 +275,6 @@ Planned future developments include:
 
 * AlphaFold structure integration
 * Automated visualization dashboards
-* Streamlit-based web application
 * REST API deployment
 * Docker containerization
 * Nextflow workflow integration
