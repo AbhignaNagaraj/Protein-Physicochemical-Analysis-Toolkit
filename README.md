@@ -1,4 +1,6 @@
 # Protein Physicochemical Analysis Toolkit
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7207ab5c-8b55-4ac7-82c7-937f7a78d9a7" />
+
 
 A Python-based bioinformatics toolkit for automated physicochemical profiling and comparative analysis of protein sequences using Biopython.
 
