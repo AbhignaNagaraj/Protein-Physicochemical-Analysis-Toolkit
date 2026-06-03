@@ -1,4 +1,4 @@
-# Protein Physicochemical Analysis Toolkit
+# Protein Physicochemical Analysis Dashboard
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Biopython](https://img.shields.io/badge/Biopython-Latest-green)
 ![Linux](https://img.shields.io/badge/Linux-Compatible-orange)
