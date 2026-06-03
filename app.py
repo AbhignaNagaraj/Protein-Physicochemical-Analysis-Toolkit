@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from Bio import SeqIO
 from Bio.SeqUtils.ProtParam import ProteinAnalysis
+from io import StringIO
 
 st.set_page_config(page_title="Protein Physicochemical Analysis Toolkit")
 
@@ -18,7 +19,11 @@ if uploaded_file:
 
     results = []
 
-    sequences = SeqIO.parse(uploaded_file, "fasta")
+    fasta_data = StringIO(
+        uploaded_file.getvalue().decode("utf-8")
+    )
+
+    sequences = SeqIO.parse(fasta_data, "fasta")
 
     for record in sequences:
 
